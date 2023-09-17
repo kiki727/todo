@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    
+
+</head>
+<body>
+    <h1>Todo test App</h1>
+
+    <div>
+        <h2>Add Todo</h2>
+        <input type="text" id="task" placeholder="Naslov zadatka">
+        <input type="text" id="description" placeholder="Kratak opis">
+        <select id="status">
+            <option value="todo" selected>Todo</option>
+            <option value="inprogress">In Progress</option>
+            <option value="done">Done</option>
+        </select>
+        <button onclick="addTodo()">Add Todo</button>
+    </div>
+
+    <div>
+        <h2>Todos</h2>
+        <ul id="todoList"></ul>
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
